@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- [Head] start -->
+  <head>
+    <title>Home | Dashboard</title>
+    <!-- [Meta] -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="penjualan tiket indonesia, makalah komputer grafik"
+    />
+    <meta
+      name="keywords"
+      content="Bootstrap admin template, Dashboard UI Kit, Dashboard Template, Backend Panel, react dashboard, angular dashboard"
+    />
+    <meta name="author" content="Phoenixcoded" />
+    <!-- [Favicon] icon -->
+    <link rel="icon" href="/assets/images/my_logo.jpg" />
+    <!-- [Font] Family -->
+    <link
+      rel="stylesheet"
+      href="/assets/fonts/inter/inter.css"
+      id="main-font-link"
+    />
+    <!-- [phosphor Icons] https://phosphoricons.com/ -->
+    <link rel="stylesheet" href="/assets/fonts/phosphor/duotone/style.css" />
+    <!-- [Tabler Icons] https://tablericons.com -->
+    <link rel="stylesheet" href="/assets/fonts/tabler-icons.min.css" />
+    <!-- [Feather Icons] https://feathericons.com -->
+    <link rel="stylesheet" href="/assets/fonts/feather.css" />
+    <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="/assets/fonts/fontawesome.css" />
+    <!-- [Material Icons] https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="/assets/fonts/material.css" />
+    <!-- [Template CSS Files] -->
+    <link rel="stylesheet" href="/assets/css/style.css" id="main-style-link" />
+    <!-- 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    -->
+    <script src="/assets/js/tech-stack.js"></script>
+    <link rel="stylesheet" href="/assets/css/style-preset.css" /></head
+  ><!-- [Head] end --><!-- [Body] Start -->
+  <body
+    data-pc-preset="preset-1"
+    data-pc-sidebar-caption="true"
+    data-pc-layout="vertical"
+    data-pc-direction="ltr"
+    data-pc-theme_contrast=""
+    data-pc-theme="light"
+  >
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+      <div class="loader-track"><div class="loader-fill"></div></div>
+    </div>
+    <!-- [ Pre-loader ] End --><!-- [ Sidebar Menu ] start -->
+    <nav class="pc-sidebar">
+      <div class="navbar-wrapper">
+        <!-- HEADER -->
+        <div class="m-header">
+          <a href="index.html" class="b-brand text-primary"
+            ><!-- ========   Change your logo from here   ============ -->
+            <img
+              src="/assets/images/my-logo-transparant.png"
+              class="img-fluid"
+              width="80"
+              height="auto"
+              alt="logo"
+            />
+          </a>
+          <h4>Developer Space Egg</h4>
+          <span class="badge bg-light-success rounded-pill ms-2 theme-version"
+            >v1</span
+          >
+        </div>
+        <div class="navbar-content">
+          <div class="card pc-user-card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <img
+                    src="/assets/images/user/avatar-1.jpg"
+                    alt="user-image"
+                    class="user-avtar wid-45 rounded-circle"
+                  />
+                </div>
+                <div class="flex-grow-1 ms-3 me-2">
+                  <h6 class="mb-0">Abdul Majid</h6>
+                  <small>Mahasiswa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="pc-navbar">
+            <li class="pc-item pc-caption"><label>Halaman</label></li>
+            <li class="pc-item">
+              <a href="index.html" class="pc-link"
+                ><span class="pc-micon"
+                  ><svg class="pc-icon">
+                    <use xlink:href="#custom-status-up"></use>
+                  </svg> </span
+                ><span class="pc-mtext">Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- [ Sidebar Menu ] end --><!-- [ Header Topbar ] start -->
+    <header class="pc-header">
+      <div class="header-wrapper">
+        <!-- [Mobile Media Block] start -->
+        <div class="me-auto pc-mob-drp">
+          <ul class="list-unstyled">
+            <!-- ======= Menu collapse Icon ===== -->
+            <li class="pc-h-item pc-sidebar-collapse">
+              <a href="#" class="pc-head-link ms-0" id="sidebar-hide"
+                ><i class="ti ti-menu-2"></i
+              ></a>
+            </li>
+            <li class="pc-h-item pc-sidebar-popup">
+              <a href="#" class="pc-head-link ms-0" id="mobile-collapse"
+                ><i class="ti ti-menu-2"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <!-- [Mobile Media Block end] -->
+        <div class="ms-auto">
+          <ul class="list-unstyled">
+            <li class="dropdown pc-h-item">
+              <a
+                class="pc-head-link dropdown-toggle arrow-none me-0"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="false"
+                aria-expanded="false"
+                ><svg class="pc-icon">
+                  <use xlink:href="#custom-sun-1"></use>
+                </svg>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
+                <a
+                  href="#!"
+                  class="dropdown-item"
+                  onclick="layout_change('dark')"
+                  ><svg class="pc-icon">
+                    <use xlink:href="#custom-moon"></use>
+                  </svg>
+                  <span>Dark</span> </a
+                ><a
+                  href="#!"
+                  class="dropdown-item"
+                  onclick="layout_change('light')"
+                  ><svg class="pc-icon">
+                    <use xlink:href="#custom-sun-1"></use>
+                  </svg>
+                  <span>Light</span> </a
+                ><a
+                  href="#!"
+                  class="dropdown-item"
+                  onclick="layout_change_default()"
+                  ><svg class="pc-icon">
+                    <use xlink:href="#custom-setting-2"></use>
+                  </svg>
+                  <span>Default</span></a
+                >
+              </div>
+            </li>
+            <li class="dropdown pc-h-item header-user-profile">
+              <a
+                class="pc-head-link dropdown-toggle arrow-none me-0"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="false"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+                ><img
+                  src="/assets/images/user/avatar-2.jpg"
+                  alt="user-image"
+                  class="user-avtar"
+              /></a>
+              <div
+                class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown"
+              >
+                <div
+                  class="dropdown-header d-flex align-items-center justify-content-between"
+                >
+                  <h5 class="m-0">Profile</h5>
+                </div>
+                <div class="dropdown-body">
+                  <div
+                    class="profile-notification-scroll position-relative"
+                    style="max-height: calc(100vh - 225px)"
+                  >
+                    <div class="d-flex mb-1">
+                      <div class="flex-shrink-0">
+                        <img
+                          src="/assets/images/user/avatar-2.jpg"
+                          alt="user-image"
+                          class="user-avtar wid-35"
+                        />
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h6 class="mt-2">Abdul Majid 🖖</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- [ Header ] end --><!-- [ Main Content ] start -->
+    <div class="pc-container">
+      <div class="pc-content">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+          <div class="col-12">
+            <div class="card welcome-banner bg-blue-800">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="p-4">
+                      <h2 class="text-white">Komputer Grafik</h2>
+                      <p class="text-white">
+                        Penerapan Apexcharts untuk Visualisasi Data Interaktif dalam aplikasi web: Studi kasus jumlah penonton timnas indonesia selama kualifikasi piala dunia 2026
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 text-center">
+                    <div class="img-welcome-banner">
+                      <img
+                        src="/assets/images/widget/welcome-banner.png"
+                        alt="img"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- GRAPIK CARD -->
+          <div class="col-lg-9">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">
+                      Jumlah Penonton Timnas di Kualifikasi Piala Dunia 2026
+                    </h5>
+                  </div>
+                </div>
+                <!--
+                <h5 class="text-end my-2">
+                  5.44% <span class="badge bg-success">+2.6%</span>
+                </h5>
+              -->
+                <div class="mt-4" id="customer-rate-graph"></div>
+                <!-- [Chart Type] -->
+                <!--
+                <div>
+                  <button
+                    onclick="defaultChart()"
+                    class="btn mx-1 btn-outline-success"
+                  >
+                    Bar
+                  </button>
+                  <button
+                    onclick="changeChartType('pie')"
+                    class="btn mx-1 btn-outline-danger"
+                  >
+                    Pie
+                  </button>
+                  <button
+                    onclick="changeChartType('donut')"
+                    class="btn mx-1 btn-outline-warning"
+                  >
+                    Donat
+                  </button>
+                </div>
+                -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">Details</h5>
+              </div>
+              <div class="card-body">
+                <div class="d-grid gap-2">
+                  <button
+                    type="button"
+                    class="btn btn-link-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal_indo_vs_brunei"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <span class="p-1 d-block bg-primary rounded-circle"
+                          ><span class="visually-hidden">New alerts</span></span
+                        >
+                      </div>
+                      <div class="flex-grow-1 mx-2">
+                        <p class="mb-0 d-grid text-start">
+                          <span class="text-truncate w-100"
+                            >Indonesia vs Brunei</span
+                          >
+                        </p>
+                      </div>
+                    </div></button
+                  ><button
+                    type="button"
+                    class="btn btn-link-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal_indo_vs_filipina"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <span class="p-1 d-block bg-primary rounded-circle"
+                          ><span class="visually-hidden">New alerts</span></span
+                        >
+                      </div>
+                      <div class="flex-grow-1 mx-2">
+                        <p class="mb-0 d-grid text-start">
+                          <span class="text-truncate w-100"
+                            >Indonesia vs Filipina</span
+                          >
+                        </p>
+                      </div>
+                    </div></button
+                  ><button
+                    class="btn btn-link-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal_indo_vs_vietnam"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <span class="p-1 d-block bg-primary rounded-circle"
+                          ><span class="visually-hidden">New alerts</span></span
+                        >
+                      </div>
+                      <div class="flex-grow-1 mx-2">
+                        <p class="mb-0 d-grid text-start">
+                          <span class="text-truncate w-100"
+                            >Indonesia vs Vietnam</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                  <button
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal_indo_vs_iraq"
+                    class="btn btn-link-secondary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="50.000 Penonton"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <span class="p-1 d-block bg-primary rounded-circle"
+                          ><span class="visually-hidden">New alerts</span></span
+                        >
+                      </div>
+                      <div class="flex-grow-1 mx-2">
+                        <p class="mb-0 d-grid text-start">
+                          <span class="text-truncate w-100"
+                            >Indonesia vs Iraq</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                  <button
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal_indo_vs_australia"
+                    class="btn btn-link-secondary"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <span class="p-1 d-block bg-primary rounded-circle"
+                          ><span class="visually-hidden">New alerts</span></span
+                        >
+                      </div>
+                      <div class="flex-grow-1 mx-2">
+                        <p class="mb-0 d-grid text-start">
+                          <span class="text-truncate w-100"
+                            >Indonesia vs Australia</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-link-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal_indo_vs_jepang"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <span class="p-1 d-block bg-primary rounded-circle"
+                          ><span class="visually-hidden">New alerts</span></span
+                        >
+                      </div>
+                      <div class="flex-grow-1 mx-2">
+                        <p class="mb-0 d-grid text-start">
+                          <span class="text-truncate w-100"
+                            >Indonesia vs Jepang</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-link-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal_indo_vs_bahrain"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <span class="p-1 d-block bg-primary rounded-circle"
+                          ><span class="visually-hidden">New alerts</span></span
+                        >
+                      </div>
+                      <div class="flex-grow-1 mx-2">
+                        <p class="mb-0 d-grid text-start">
+                          <span class="text-truncate w-100"
+                            >Indonesia vs Bahrain</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-link-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal_indo_vs_china"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <span class="p-1 d-block bg-primary rounded-circle"
+                          ><span class="visually-hidden">New alerts</span></span
+                        >
+                      </div>
+                      <div class="flex-grow-1 mx-2">
+                        <p class="mb-0 d-grid text-start">
+                          <span class="text-truncate w-100"
+                            >Indonesia vs China</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-link-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal_indo_vs_arabsaudi"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <span class="p-1 d-block bg-primary rounded-circle"
+                          ><span class="visually-hidden">New alerts</span></span
+                        >
+                      </div>
+                      <div class="flex-grow-1 mx-2">
+                        <p class="mb-0 d-grid text-start">
+                          <span class="text-truncate w-100"
+                            >Indonesia vs Arab Saudi</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body border-bottom pb-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="mb-0">
+                    Klasemen Group C Round 3 Kualifikasi Piala Dunia 2026
+                  </h5>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Pos</th>
+                        <th>Tim</th>
+                        <th>T</th>
+                        <th>M</th>
+                        <th>S</th>
+                        <th>K</th>
+                        <th>GM</th>
+                        <th>GK</th>
+                        <th>SG</th>
+                        <th>Poin</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="/assets/images/flags/japan.png" class="" width="24" height="24" alt="Japan flag">
+                            <span class="ms-2">Jepang</span>
+                          </div>
+                        </td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>22</td>
+                        <td>2</td>
+                        <td>20</td>
+                        <td class="text-bold">16</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="/assets/images/flags/australia.png" class="" width="24" height="24" alt="Australia flag">
+                            <span class="ms-2">Australia</span>
+                          </div>
+                        </td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td class="text-bold">7</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="/assets/images/flags/indonesia.png" class="" width="24" height="24" alt="Indonesia flag">
+                            <span class="ms-2">Indonesia</span>
+                          </div>
+                        </td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>9</td>
+                        <td>-3</td>
+                        <td class="text-bold">6</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="/assets/images/flags/arabsaudi.png" class="" width="24" height="24" alt="Saudi Arabia flag">
+                            <span class="ms-2">Arab Saudi</span>
+                          </div>
+                        </td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>-3</td>
+                        <td class="text-bold">6</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="/assets/images/flags/bahrain.png" class="" width="24" height="24" alt="Bahrain flag">
+                            <span class="ms-2">Bahrain</span>
+                          </div>
+                        </td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>10</td>
+                        <td>-5</td>
+                        <td class="text-bold">6</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="/assets/images/flags/china.png" class="" width="24" height="24" alt="China flag">
+                            <span class="ms-2">China</span>
+                          </div>
+                        </td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>16</td>
+                        <td>-10</td>
+                        <td class="text-bold">6</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="text-muted small mt-3">
+                  <p class="mb-1">Keterangan:</p>
+                  <ul class="list-unstyled ps-3">
+                    <li>M = Menang</li>
+                    <li>S = Seri</li>
+                    <li>K = Kalah</li>
+                    <li>GM = Gol Memasukkan</li>
+                    <li>GK = Gol Kemasukan</li>
+                    <li>SG = Selisih Gol</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="mb-0">Chart Category Tiket</h5>
+                </div>
+                <div id="total-income-graph"></div>
+                <h4 class="mt-3">List Harga Tiket</h4>
+                <div class="row g-3 mt-3">
+                  <div class="col-sm-6">
+                    <div class="bg-body p-3 rounded">
+                      <div class="d-flex align-items-center mb-2">
+                        <div class="flex-shrink-0">
+                          <span class="p-1 d-block bg-primary rounded-circle"
+                            ><span class="visually-hidden"
+                              >New alerts</span
+                            ></span
+                          >
+                        </div>
+                        <div class="flex-grow-1 ms-2">
+                          <p class="mb-0">Premium West</p>
+                        </div>
+                      </div>
+                      <h6 class="mb-0">Rp. 1.400.000</h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="bg-body p-3 rounded">
+                      <div class="d-flex align-items-center mb-2">
+                        <div class="flex-shrink-0">
+                          <span class="p-1 d-block bg-warning rounded-circle"
+                            ><span class="visually-hidden"
+                              >New alerts</span
+                            ></span
+                          >
+                        </div>
+                        <div class="flex-grow-1 ms-2">
+                          <p class="mb-0">Premium East</p>
+                        </div>
+                      </div>
+                      <h6 class="mb-0">Rp. 1.400.000</h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="bg-body p-3 rounded">
+                      <div class="d-flex align-items-center mb-2">
+                        <div class="flex-shrink-0">
+                          <span class="p-1 d-block bg-success rounded-circle"
+                            ><span class="visually-hidden"
+                              >New alerts</span
+                            ></span
+                          >
+                        </div>
+                        <div class="flex-grow-1 ms-2">
+                          <p class="mb-0">Garuda West</p>
+                        </div>
+                      </div>
+                      <h6 class="mb-0">Rp. 1.000.000</h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="bg-body p-3 rounded">
+                      <div class="d-flex align-items-center mb-2">
+                        <div class="flex-shrink-0">
+                          <span
+                            class="p-1 d-block bg-light-primary rounded-circle"
+                            ><span class="visually-hidden"
+                              >New alerts</span
+                            ></span
+                          >
+                        </div>
+                        <div class="flex-grow-1 ms-2">
+                          <p class="mb-0">Garuda East</p>
+                        </div>
+                      </div>
+                      <h6 class="mb-0">Rp. 1.000.000</h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="bg-body p-3 rounded">
+                      <div class="d-flex align-items-center mb-2">
+                        <div class="flex-shrink-0">
+                          <span
+                            class="p-1 d-block bg-light-primary rounded-circle"
+                            ><span class="visually-hidden"
+                              >New alerts</span
+                            ></span
+                          >
+                        </div>
+                        <div class="flex-grow-1 ms-2">
+                          <p class="mb-0">Garuda East</p>
+                        </div>
+                      </div>
+                      <h6 class="mb-0">Rp. 1.000.000</h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="bg-body p-3 rounded">
+                      <div class="d-flex align-items-center mb-2">
+                        <div class="flex-shrink-0">
+                          <span
+                            class="p-1 d-block rounded-circle"
+                            style="background-color: #dc2626"
+                            ><span class="visually-hidden"
+                              >New alerts</span
+                            ></span
+                          >
+                        </div>
+                        <div class="flex-grow-1 ms-2">
+                          <p class="mb-0">Garuda North</p>
+                        </div>
+                      </div>
+                      <h6 class="mb-0">Rp. 400.000</h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="bg-body p-3 rounded">
+                      <div class="d-flex align-items-center mb-2">
+                        <div class="flex-shrink-0">
+                          <span
+                            class="p-1 d-block rounded-circle"
+                            style="background-color: #4335a7"
+                            ><span class="visually-hidden"
+                              >New alerts</span
+                            ></span
+                          >
+                        </div>
+                        <div class="flex-grow-1 ms-2">
+                          <p class="mb-0">Garuda South</p>
+                        </div>
+                      </div>
+                      <h6 class="mb-0">Rp. 400.000</h6>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="bg-body p-3 rounded">
+                      <div class="d-flex align-items-center mb-2">
+                        <div class="flex-shrink-0">
+                          <span
+                            class="p-1 d-block rounded-circle"
+                            style="background-color: #47663b"
+                            ><span class="visually-hidden"
+                              >New alerts</span
+                            ></span
+                          >
+                        </div>
+                        <div class="flex-grow-1 ms-2">
+                          <p class="mb-0">Upper Garuda</p>
+                        </div>
+                      </div>
+                      <h6 class="mb-0">Rp. 240.000</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- [ Main Content ] end -->
+      </div>
+    </div>
+
+    <!-- MODAL DIALOG INDO VS BRUNEI -->
+    <div
+      id="modal_indo_vs_brunei"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Indonesia vs Brunei Darussalam (12 Oktober 2023)
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <a href="https://sport.republika.co.id/berita/s2f8pe438/ini-jumlah-penonton-di-gbk-saat-indonesia-bantai-brunei-60">REPUBLIKA.CO.ID, JAKARTA</a> -- Tim nasional (timnas) Indonesia tampil impresif pada leg pertama putaran pertama Kualifikasi Piala Dunia 2026 zona Asia. 
+              Skuad polesan Shin Tae-yong unggul 6-0 atas Brunei Darussalam di Stadion Utama Gelora Bung Karno (GBK), Kamis (12/10/2023) malam WIB.
+              
+              
+            </p>
+            <p>
+              Sejak awal, pasukan Garuda mencoba mendominasi. Serangan demi serangan dilancarkan. Kubu tamu tak dibiarkan berkembang.
+              Pergerakan semua lini tuan rumah, terlihat hidup. Para pemain yang diturunkan menjalankan instruksi Coach Shin dengan baik. Hasil akhir, Brunei dibantai.              
+            </p>
+            <p>Sayangnya, tidak semua kursi tribun GBK terisi. Melalui pengeras suara, petugas mengumumkan jumlah penonton laga malam ini cuma menyentuh angka <strong>23.318 orang</strong> . 
+              Jauh dari kapasitas maksimal arena tersebut.
+              </p>
+              <p>Meski demikian, atmosfer GBK tetap hidup. Dua kelompok suporter, La Grande Indonesia dan Ultras Garuda berperan menyemarakkan suasana. 
+                Penonton lain juga demikian.</p>
+                <p>Pada Akhirnya, di Leg kedua di markas brunei darussalam indonesia menang 0-6 atas tim tuan rumah dan memastikan langkah mereka selanjutnya menuju round 2 kualifikasi piala dunia 2026.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL DIALOG INDO VS BRUNEI -->
+
+    <!-- MODAL DIALOG INDO VS FILIPINA -->
+    <div
+      id="modal_indo_vs_filipina"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Indonesia vs Filipina (11 Juni 2024)
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <a href="https://www.suara.com/bola/2024/06/13/154500/timnas-indonesia-pecahkan-rekor-penonton-terbanyak-di-kualifikasi-piala-dunia-2026-zona-asia-ungguli-korsel">Suara.com</a> - Pertandingan Timnas Indonesia vs Filipina dalam matchday pamungkas Grup F putaran kedua Kualifikasi Piala Dunia 2026 zona Asia di Stadion Utama Gelora Bung Karno (SUGBK), Jakarta, mencatatkan rekor tersendiri.
+            </p>
+            <p>
+              Kehadiran penonton di laga yang dimenangi Timnas Indonesia dengan skor 2-0 pada Selasa (11/6/2024) tersebut, memecahkan rekor laga kandang dengan jumlah penonton terbanyak sepanjang putaran kedua Kualifikasi Piala Dunia 2026 zona Asia.
+            </p>
+            <p>
+              Laga kandang Timnas Indonesia ini mengalahkan jumlah penonton di markas Korea Selatan.
+              Menurut data, sebanyak <strong>64.942 penonton hadir</strong> langsung ke SUGBK untuk menyaksikan langsung partai Timnas Indonesia vs Filipina. Memang, salah satu venue termegah di Tanah Air itu erlihat penuh.
+            </p>
+            <p>
+              Jumlah tersebut mengalahkan catatan yang sebelumnya dipegang laga kandang Korea Selatan pada 21 November 2023. Ketika itu, Son Heung-min dan kawan-kawan disaksikan langsung <strong>64.921 pasang mata</strong> ketika melawan Thailand di putaran kedua Kualifikasi Piala Dunia 2026 zona Asia.
+            </p>
+            <p>
+              Namun, untuk jumlah penonton pada pertandingan yang melibatkan Korea Selatan di putaran kedua Kualifikasi Piala Dunia 2026 zona Asia terbilang konsisten. Pasalnya, angkanya selalu melebihi 60 ribu orang.
+            </p>
+            <p>
+              Sementara Timnas Indonesia tak selalu demikian meski angkanya tetap banyak. Seperti ketika melawan Vietnam pada Maret lalu di mana <strong>57.696 hadir</strong> ke SUGBK.
+              Sedangkan saat melawan Irak pada 6 Juni lalu, angka kedatangan suporter mencapai <strong>60.245</strong>. Tentu ini sangat positif lantaran pecinta sepak bola Tanah Air semakin meningkat.
+            </p>
+            <p>
+              Catatan tersebut bisa saja kembali berubah di putaran ketiga Kualifikasi Piala Dunia 2026 zona Asia. Sebab, Timnas Indonesia masih akan berjuang di fase itu.
+            </p>            
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL DIALOG INDO VS FILIPINA -->
+
+    <!-- MODAL DIALOG INDO VS IRAQ -->
+    <div
+      id="modal_indo_vs_iraq"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Indonesia vs Iraq (6 Juni 2024)
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <a href="https://skor.id/post/ramai-60-ribu-suporter-padati-sugbk-saat-duel-timnas-indonesia-kontra-irak">SKOR.id</a> - Kenaikan harga tiket ternyata tak mengurangi antusiasme suporter untuk mendukung Timnas Indonesia secara langsung di stadion.
+              Itu terlihat saat pasukan Garuda menjamu Irak dalam Kualifikasi Piala Dunia 2026 di Stadion Utama Gelora Bung Karno (SUGBK), Senayan, Jakarta, Kamis (6/6/2024) sore. 
+            </p>
+            <p>
+              Pada laga yang berkesudahan 2-0 untuk kemenangan tim tamu tersebut, tercatat ada <strong>60.245 penonton</strong> yang memadati SUGBK.
+              Hal ini sesuai dengan apa yang disampaikan Managing Director PT Garuda Sepakbola Indonesia (GSI), Marshal Masita, beberapa waktu lalu, bahwa tiket memang hampir habis terjual.
+              SUGBK berkapasitas 78.000 penonton. Jika dihitung 80 persen dari jumlah tersebut, maka kemungkinan tiket yang dijual sekitar 60an ribu, termasuk jatah sponsor dan lain-lain.
+            </p>
+            <p>
+              Pada awal penjualan tiket, ada kekhawatiran bahwa SUGBK bakal sepi seiring naiknya harga tiket Timnas Indonesia di Kualifikasi Piala Dunia 2026. Namun, hal itu ternyata tidak terbukti.
+              Harga tiket melawan Irak dan Filipina naik sekitar 150 persen dibanding laga kandang sebelumnya versus Vietnam. 
+            </p>
+            <p>
+              Pada pertandingan malam tadi, misalnya, tiket termurah adalah Rp250.000 untuk tribun atas. Sedangkan harga paling murah saat Timnas Indonesia menjamu Vietnam pada 21 Maret lalu hanya Rp100.000.
+              Namun, euforia suporter sejak melihat Marselino Ferdinan dan kawa-kawan tampil apik di level senior mapun U-23, membuat kenaikan harga tak berpengaruh.
+              Bahkan, tiket terusan untuk dua laga melawan Irak dan Filipina langsung ludes 50ribu lembar dalam 24 jam pertama.
+            </p>
+            <p>
+              Pertanyaan soal ketersediaan tiket kembali mencuat setelah salah satu bank kembali membuka penjualan, beberapa hari jelang laga kontra Irak.
+Isu soal stadion akan sepi, lagi-lagi menjadi perbincangan di media sosial. 
+Menariknya, pertandingan kali ini justru lebih ramai dibandingkan duel kandang sebelumnya lawan Vietnam.
+            </p>
+            <p>
+              Pada laga Timnas Indonesia versus The Golden Star Warriors yang berlangsung di SUGBK pada 21 Maret lalu, ada <strong>57.696</strong>. Sementara, duel kontra Irak ada penambahan 2.500-an pentonton.
+Tapi, jumlah penonton dalam dua pertandingan ini unggul jauh dibanding ketika pasukan Garuda melawan Brunei di putaran pertama Kualifikasi Piala Dunia 2026, 12 October tahun lalu. Kala itu, jumlah penonton hanya <strong>23.318.</strong>
+            </p>            
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL DIALOG INDO VS IRAQ -->
+
+    <!-- MODAL DIALOG INDO VS VIETNAM -->
+    <div
+      id="modal_indo_vs_vietnam"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Indonesia vs Vietnam (21 Maret 2024)
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <a href="https://tirto.id/statistik-timnas-indonesia-vs-vietnam-ppd-2026-rapor-pemain-gW75#google_vignette">tirto.id</a> - Statistik Timnas Indonesia vs Vietnam di Kualifikasi Piala Dunia 2026 zona Asia (AFC) pada Kamis, 21 Maret 2024 di Stadion Utama Gelora Bung Karno (SUGBK), Jakarta, menunjukkan catatan penting. Garuda untuk kedua kalinya bisa mengalahkan The Golden Star Warriors dalam 2 pertemuan pada awal 2024
+              Pertandingan Timnas Indonesia melawan Vietnam dalam Kualifikasi Piala Dunia 2026 pada 21 Maret 2024 berlangsung di Stadion Gelora Bung Karno, Jakarta, dan dihadiri oleh sekitar <strong>57.695 penonton</strong>. Pertandingan ini dimenangkan Indonesia dengan skor 1-0 berkat gol Egy Maulana Vikri pada menit ke-52
+            </p>
+            <p>
+              Pada Januari 2024 lalu, Timnas Indonesia bsa merobohkan Vietnam lewat gol penalti Asnawi Mangkualam di Piala Asia 2023. Kali ini, giliran Egy Maulana Vikri yang menjadi penentu kemenangan Garuda kontra The Golden Star Warriors di Kualifikasi Piala Dunia 2026. Skor cukup 1-0, yang penting Timnas Indonesia bisa meraih 3 poin perdana mereka di Grup F.
+            </p>
+            <p>
+              Statistik Timnas vs Vietnam pada Kamis (21/3) menunjukkan bagaimana lini belakang Garuda mampu meredam kekuatan lawan mereka. Dalam total 90 menit, tim asuhan Shin Tae-yong hanya terancam oleh 2 tembakan. Itupun, tidak ada yang tepat sasaran alias 0 shot on target.
+            </p>
+            <p>
+              Sepanjang babak pertama, Timnas Indonesia tercatat memiliki penguasaan bola hanya 36 persen. Sebaliknya, Vietnam punya 64 persen, tetapi tidak cukup mampu memanfaatkan ball possessions tersebut.
+            </p>
+            <p>
+              Dalam statistik FlashScore, tercatat tim asuha Philippe Trousier tidak mengirimkan satu pun tembakan dalam 45 menit awal. Ini berbeda dengan Indonesia yang bisa melepaskkan 2 tembakan.
+            </p>
+            <p>
+              Percobaan pertama dilakukan oleh Rafael Struick pada menit 29, tetapi tendangannya yang datar, tidak bertenaga di depan kiper Vietnam. Percobaan lain dilakukan oleh Marselino Ferdinan, tetapi tendanganya diblok.
+            </p>
+            <p>
+              Shin Tae-yong melakukan 3 pergantian pemain yang mencolok pada awal babak kedua. Yakob Sayuri dicopot untuk Sandy Walsh. Sementara itu, Egy Maulana Vikri diplot menggantikan Hokky Caraka yang tidak efektif. Terakhir, Pratama Arhan menempati posisi Natha Tjoe-A-On.
+            </p>
+            <p>
+              Perubahan itu berbuah efektif untuk Timnas Indonesia. Mereka lebih banyak menguasai bola di babak kedua, juga menciptakan lebih banyak peluang. Hasilnya, menit 52, lemparan jarak jauh Pratama Arhan tidak bisa disapu oleh Vo Minth Trong, lalu datanglah Egy Maulana Vikri untuk mencetak gol.
+            </p>
+            <p>
+              Vietnam merespons ini dengan masuknya Vu Van Thanh dan Nguyen Tien Linh pada menit 61, diikuti Le Pham Thanh Long dan Ho Tan Tai pada 16 menit jelang laga usai. Namun, semua langkah yang digunakan pelatih Philippe Troussier tidak berbuah hasil. Skor 1-0 menjadi milik Garuda hingga peluit panjang berbunyi.
+            </p>
+            <p>
+              Dibandingkan dengan babak pertama, penguasaan bola kedua tim dalam 45 menit terakhir terlihat kontras. Timnas Indonesia bisa memiliki 61 persen pada paruh kedua, sedangkan Vietnam hanya 39 persen. Selain itu, 5 kali percobaan Garuda, seluruhnya mengarah ke gawang Filip Nguyen. Ini berbanding terbalik dengan Vietnam, yang 2 peluangnya melenceng dari sasaran.
+            </p>            
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL DIALOG INDO VS VIETNAM -->
+
+    <!-- MODAL DIALOG INDO VS AUSTRALIA -->
+    <div
+      id="modal_indo_vs_australia"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Indonesia vs Australia (10 September 2024)
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <a href="https://skor.id/post/laga-timnas-indonesia-vs-australia-catatkan-jumlah-penonton-terbanyak">SKOR.id</a> - Dua laga putaran ketiga Kualifikasi Piala Dunia 2026 zona Asia sudah usai. Total, 18 laga dari tiga grup telah selesai digelar pada 5 dan 10 September 2024.
+              Menariknya, pertandingan Timnas Indonesia vs Australia di Stadion Utama Gelora Bung Karno (SUGBK), Jakarta, mencatatkan jumlah penonton terbanyak, yakni <strong>70.059 orang.</strong> Unggul dari laga-laga lainnya pada dua laga awal putaran ketiga yang melibatkan tim-tim raksasa seperti Jepang, Irak dan Korea Selatan.
+            </p>
+            <p>
+              Pada posisi kedua pertandingan dengan jumlah penonton terbanyak tercatat di Stadion Internasional Basra, Irak. Itu terjadi pada laga Irak melawan Oman yang digelar, 5 September 2024, dengan dihadiri 63.720 penonton.
+            </p>
+            <p>
+              Laga terbanyak ketiga adalah laga Korea Selatan vs Palestina yang dihadiri 59.579 penonton di Seoul, Korea Selatan. Setelah itu, laga Kuwait vs Irak di Stadion Internasional Jabir Al-Ahmad juga mencatat jumlah besar, yaitu 58.000 penonton.
+            </p>
+            <p>
+              Pada dua pertandingan Kualifikasi Piala Dunia ini ada beberapa pertandingan yang harus digelar di tempat netral. Di antaranya laga Korea Utara vs Qatar yang digelar di Stadion Nasional Laos. Kemudian, Palestina vs Yordania diselenggarakan di Stadion Kuala Lumpur, Malaysia.
+            </p>
+            <p>
+              Bagi Timnas Indonesia, jumlah penonton ini naik dari laga-laga sebelumnya. Saat menghadapi Vietnam di SUGBK, 21 Maret 2024, dipadati 57.696 penonton. Jumlah itu naik lagi saat Indonesia menjamu Irak pada 6 Juni 2024. Saat itu, ada 60.245 penonton.  
+            </p>
+            <p>
+              Dan saat laga menentukan melawan Filipina pada 11 Juni 2024, jumlah penonton yang menjadi saksi kelolosan Jay Idzes dan kawan-kawan ke putaran ketiga Kualifikasi Piala Dunia 2026 sebanyak 64.942 penonton.
+            </p>            
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL DIALOG INDO VS AUSTRALIA -->
+
+    <!-- MODAL DIALOG INDO VS JEPANG -->
+    <div
+      id="modal_indo_vs_jepang"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Indonesia vs Jepang (15 November 2024)
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Jakarta - Atmosfer yang diciptakan suporter Timnas Indonesia meninggalkan kesan mendalam buat Jepang. Sebanyak 60 ribu penonton membuat suasana pertandingan meriah.
+              Jepang dijamu Indonesia dalam lanjutan Ronde 3Kualifikasi Piala Dunia 2026 di Stadion Utama Gelora Bung Karno (SUGBK), Jakarta, Jumat (15/11/2024). Panitia pertandingan mengumumkan bahwa jumlah penonton yang hadir di kisaran 60 ribu orang.
+            </p>
+            <p>
+              Koreo keren turut ditampilkan yakni Gundala Vs Godzilla, dua karakter fiksi dalam perfilman Indonesia dan Jepang. La Grande Indonesia yang secara spesial menyiapkan koreo ini.
+            </p>
+            <p>
+              Pelatih Jepang Hajime Moriyasu sampai 'angkat topi' buat kemeriahan di SUGBK. Timnya sampai dibuat sempat tertekan dalam menjalani pertandingan.
+              "Pertandingan ini, saya melihat suporter Indonesia yang sangat bersemangat. Sebagai bagian dari sepakbola, saya sangat senang melihatnya," kata Moriyasu saat memberikan keterangan seusai laga.
+            </p>
+            <p>
+              "Suporter Indonesia benar-benar memberi tekanan besar buat skuad. Sebelum pertandingan, saya sudah bilang ke pemain laga tidak mudah. Kami mungkin akan menghadapi beberapa peluang yang diciptakan pemain Indonesia, dan itu benar-benar terjadi," ujarnya menambahkan.
+            </p>
+            <p>
+              Meski begitu, Jepang tetap punya keunggulan kualitas. Samurai Biru menang telak empat gol tanpa balas lewat gol-gol yang dicetak Justin Hubner (bunuh diri), Takumi Minamino, Hidemasa Morita, dan Yukinari Sugawara.        
+              Sementara pemain-pemain Indonesia berulang kali melakukan kesalahan elementer. Jepang membuktikan bahwa mereka unggul segalanya dari Indonesia.
+            </p>
+            <p>
+              "Namun, para pemain (Jepang) bisa menghadapi hal ini dengan baik dan juga mengatur tekanan di bawah suporter. Dan saya mengapresiasi hal ini," tutur Moriyasu.
+              "Saya juga mengapresiasi orang-orang Jepang yang ada di Indonesia dan datang ke stadion untuk memberi energi bagi kami. Jadi saya ingin berterima kasih atas kehadiran mereka. energi mereka memberi kontribusi penting buat kemenangan kami," ucapnya.        
+            </p>            
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL DIALOG INDO VS JEPANG -->
+
+    <!-- MODAL DIALOG INDO VS BAHRAIN -->
+    <div
+      id="modal_indo_vs_bahrain"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Indonesia vs Bahrain (10 Oktober 2024)
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <a href="https://bola.kompas.com/read/2024/10/09/19340048/bahrain-vs-indonesia-sekitar-1.500-suporter-indonesia-akan-dukung-skuad-garuda">KOMPAS.com</a> - Antusiasme suporter Indonesia untuk mendukung langsung perjuangan Timnas Indonesia di putaran ketiga Kualifikasi Piala Dunia 2026 Zona Asia semakin membara.
+              Pertandingan Indonesia vs Bahrain akan berlangsung di Stadion Internasional Bahrain, Riffa, pada Kamis (10/10/2024) malam pukul 23.00 WIB.
+              Ribuan suporter dipastikan hadir untuk memberikan dukungan penuh kepada tim asuhan pelatih Shin Tae-yong.
+            </p>
+            <p>
+              Exco PSSI Arya Sinulingga mengungkapkan bahwa hingga saat ini, jumlah suporter Indonesia yang akan hadir di Bahrain sudah mencapai sekitar 1.500 orang.
+              Para pendukung ini tidak hanya berasal dari Indonesia, tetapi juga dari berbagai negara di kawasan Timur Tengah. Laporan ini diterimanya dari Garuda Qatar, organisasi suporter Indonesia di wilayah tersebut, yang selalu berhubungan baik dengan PSSI.
+              "Mungkin sekitar hampir 1.500-an, ada dari Qatar, Arab Saudi, kemudian dari Bahrain sendiri itu hampir 400 orang per negara ini. Ada Oman juga, ada Kuwait juga," ujarnya.
+
+            </p>
+            <p>
+              Menurutnya dukungan luar biasa suporter ini menjadi kekuatan tersendiri bagi Timnas Indonesia yang bertanding di kandang lawan.  
+              Seperti pada pertandingan sebelumnya turut menyulut semangat masyarakat Indonesia yang ada Timur Tengah untuk hadir dan memberikan dukungan langsung.
+              Terbukti saat itu Indonesia mampu menahan tuan rumah Arab Saudi dengan skor 1-1 pada laga pertama Grup C Kualifikasi Piala Dunia 2026 lalu. 
+              "Hasil kemarin lawan Arab Saudi membuat warga kita di Timur Tengah sangat antusias," kata Arya Sinulingga.
+            </p>
+            <p>
+              Selain itu, ia juga memuji kerapihan dan kesiapan para suporter Indonesia yang hadir di Bahrain. 
+              Organisasi suporter telah terbentuk dengan baik dan mereka sudah mempersiapkan segala sesuatunya dengan terorganisir.
+              "Mereka sewa bus, sewa hotel, semuanya sudah rapi. Laporan dari teman-teman di sana, mereka sangat terorganisir," imbuhnya. 
+              Dengan 1.500 suporter yang diperkirakan hadir, Arya Sinulingga optimistis bahwa dukungan ini akan memberikan energi positif bagi Timnas Indonesia dalam menghadapi Bahrain. 
+            </p>
+            <p>
+              Pemain bersemangat untuk tampil maksimal dan meraih hasil terbaik. "Kami sangat senang, ini bukan sekadar puluhan orang, tapi ribuan. 
+              Itu membuat saya yakin, akan semakin banyak lagi yang hadir setelah laga melawan Arab Saudi kemarin," pungkasnya.
+            </p>            
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL DIALOG INDO VS BAHRAIN -->
+
+    <!-- MODAL DIALOG INDO VS CHINA -->
+    <div
+      id="modal_indo_vs_china"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Indonesia vs China (15 Oktober 2024)
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <a href="https://www.antaranews.com/berita/4404917/merasakan-atmosfer-pertandingan-timnas-berlaga-di-negeri-china">Antara News</a> - Saat bola dari pemain China Zhang Yuning merobek gawang Timnas Indonesia yang dijaga kiper Maarten Paes pada menit ke-44, hanya segelintir suporter Indonesia yang tetap berdiri.
+            </p>
+            <p>
+              Gol yang dapat dilihat dari dekat oleh para suporter Indonesia dari tribun D70 dan D71, karena berada di belakang gawang Paes itu, memberikan kesunyian yang tidak dapat dijelaskan selama beberapa menit dari bangku penonton.
+            </p>
+            <p>
+              Jumlah suporter Indonesia pada laga keempat putaran ketiga kualifikasi Piala Dunia 2026 zona Asia Grup C di Stadion Qingdao Youth Football, Qingdao, Provinsi Shandong, Selasa (15/10), hanya sekitar 300 orang dari total penonton sejumlah <strong>37.133 orang</strong> sebagaimana pengumuman panitia pertandingan. 
+              Jumlah yang tidak banyak dibandingkan suporter tuan rumah.
+            </p>
+            <p>
+              Kedutaan Besar Republik Indonesia (KBRI) Beijing bekerja sama dengan Perhimpunan Pelajar Indonesia (PPI) Tiongkok sebelumnya telah mengumumkan kepada masyarakat Indonesia di berbagai wilayah China untuk bisa bersama-sama datang ke Qingdao memberikan dukungan.
+            </p>
+            <p>
+              Harga tiket untuk menyaksikan pertandingan berkisar 280-480 RMB (Rp600 ribu - Rp1 juta) tergantung kategori yang dipilih. Pembelian dapat dilakukan melalui aplikasi pembelian tiket di China. Suporter akan mendapatkan tiket elektronik dari aplikasi tersebut.
+            </p>
+            <p>
+              Selanjutnya, suporter tinggal datang ke Stadion Qingdao Youth Football, Qingdao yang baru diresmikan pada 2023 dan terletak sekitar satu jam dari pusat Kota Qingdao.
+              Suporter Indonesia dipusatkan di tribun D70 dan D71. Pemusatan tersebut agar suporter kedua tim tidak bertemu saat masuk dan keluar lapangan karena perbedaan pintu masuk.
+            </p>
+            <p>
+              Saat akan masuk stadion, panitia melarang penonton untuk membawa minuman, makanan, "power bank", kosmetik, senjata maupun barang-barang yang dapat menciptakan kebakaran. Mereka yang terlanjur membawa barang-barang tersebut dapat menitipkan di pintu dekat zona D yang menjadi pintu masuk khusus suporter Indonesia.
+            </p>            
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL DIALOG INDO VS CHINA -->
+
+    <!-- MODAL DIALOG INDO VS ARAB SAUDI -->
+    <div
+      id="modal_indo_vs_arabsaudi"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Indonesia vs Arab Saudi (19 November 2024)
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <a href="https://www.bola.com/indonesia/read/5795504/statistik-ciamik-timnas-indonesia-saat-pecundangi-arab-saudi-pertahanan-solid-serangan-masif">Bola.com</a>, Jakarta - Timnas Indonesia mengukir sederet catatan statistik yang ciamik saat berhasil menumbangkan Arab Saudi pada pertandingan lanjutan putaran ketiga Kualifikasi Piala Dunia 2026 Zona Asia.
+              Dalam pertandingan yang berlangsung di Stadion Utama Gelora Bung Karno (SUGBK), Senayan, Selasa (19/11/2024) malam WIB itu, Timnas Indonesia sukses mengunci tiga poin setelah menang dengan skor 2-0 atas Arab Saudi.
+            </p>
+            <p>
+              Meskipun menghadapi tekanan yang bertubi-tubi dari The Green Falcons, skuad Merah Putih nyatanya tetap berhasil mencari celah untuk mengoyak jala gawang melalui kaki Marselino Ferdinan (32’ dan 57’).
+              Di atas kertas, ada beberapa catatan statistik yang menarik dari pertandingan ini. Catatan ini membuktikan bahwa Timnas Indonesia tak inferior saat meladeni perlawanan Arab Saudi. Berikut Bola.com menyajikan ulasannya.
+            </p>
+            <p>
+              Timnas Indonesia memang dipaksa untuk lebih banyak bermain di area pertahanan sendiri pada laga ini. Arab Saudi terhitung sangat aktif dalam mendominasi penguasaan bola. Itu terjadi sepanjang laga.
+Skuad asuhan Herve Renard ini tercatat mencatatkan 77% penguasaan bola, berbanding 23% milik skuad Garuda. Mereka memang punya akurasi yang baik. Dari total 557 operan, persentase keberhasilannya mencapai 86%.
+            </p>
+            <p>
+              Sementara itu, Jay Idzes dan kawan-kawan hanya bisa mencatatkan total 173 kali operan saja sepanjang laga. Dari segi persentase keberhasilan, angkanya juga terbilang minim karena hanya menyentuh 58%.
+              Kendati menghadapi situasi sulit dalam menguasai bola, skuad Merah Putih nyatanya bisa jauh lebih mengancam ketimbang Arab Saudi. Timnas Indonesia punya lebih banyak potensi ancaman di pertahanan lawan.
+            </p>
+            <p>
+              Sepanjang laga, Timnas Indonesia menghasilkan total 13 tembakan. Dari semua itu, ada enam tembakan yang mengarah ke gawang alias menghasilkan shots on target. Setidaknya, ada empat peluang emas yang dihasilkan tuan rumah.
+Adapun Arab Saudi sebetulnya cukup banyak melepaskan tembakan karena mencapai 23 kali. Namun, akurasinya masih minim karena hanya ada tiga tembakan saja yang tepat sasaran. Mereka juga hanya punya satu big chances saja.
+            </p>
+            <p>
+              Duel sengit antara Timnas Indonesia melawan Arab Saudi memang membuat wasit asal Uzbekistan, Rustam Lutfullin, harus bekerja keras. Dia mesti menghadapi banyak friksi dan pelanggaran, terutama di menit-menit akhir.
+            </p>
+            <p>
+              Skuad Merah Putih tercatat mendapatkan lima kartu kuning dari wasit. Masing-masing diberikan kepada Nathan Tjoe-A-On, Ivar Jenner, dan Ragnar Oratmangoen. Justin Hubner jadi kolektor terbanyak karena mendapatkan dua kartu, sehingga harus mengakhiri laga lebih cepat.
+Sementara itu, The Green Falcons memperoleh tiga kartu kuning dari wasit pada pertandingan yang berlangsung dengan tensi tinggi ini. Ketiga nama yang dimaksud adalah Hassan Tambakti, Abdullah Radif, serta Saud Abdulhamid. 
+            </p>            
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL DIALOG INDO VS ARAB SAUDI -->
+
+    <!-- [ Main Content ] end -->
+    <footer class="pc-footer">
+      <div class="footer-wrapper container-fluid">
+        <div class="row">
+          <div class="col my-1">
+            <p class="m-0">
+              Abdul Majid &#9829; crafted by Team Developer SpaceEgg
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SETTINGS -->
+    <div class="pct-c-btn">
+      <a
+        href="#"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvas_pc_layout"
+        ><i class="ph-duotone ph-gear-six"></i
+      ></a>
+    </div>
+    <div
+      class="offcanvas border-0 pct-offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvas_pc_layout"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Settings</h5>
+        <button
+          type="button"
+          class="btn btn-icon btn-link-danger ms-auto"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="ti ti-x"></i>
+        </button>
+      </div>
+      <div class="pct-body customizer-body">
+        <div class="offcanvas-body py-0">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="pc-dark">
+                <h6 class="mb-1">Theme Mode</h6>
+                <p class="text-muted text-sm">
+                  Choose light or dark mode or Auto
+                </p>
+                <div class="row theme-color theme-layout">
+                  <div class="col-4">
+                    <div class="d-grid">
+                      <button
+                        class="preset-btn btn active"
+                        data-value="true"
+                        onclick="layout_change('light');"
+                        data-bs-toggle="tooltip"
+                        title="Light"
+                      >
+                        <svg class="pc-icon text-warning">
+                          <use xlink:href="#custom-sun-1"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="d-grid">
+                      <button
+                        class="preset-btn btn"
+                        data-value="false"
+                        onclick="layout_change('dark');"
+                        data-bs-toggle="tooltip"
+                        title="Dark"
+                      >
+                        <svg class="pc-icon">
+                          <use xlink:href="#custom-moon"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="d-grid">
+                      <button
+                        class="preset-btn btn"
+                        data-value="default"
+                        onclick="layout_change_default();"
+                        data-bs-toggle="tooltip"
+                        title="Automatically sets the theme based on user's operating system's color scheme."
+                      >
+                        <span
+                          class="pc-lay-icon d-flex align-items-center justify-content-center"
+                          ><i class="ph-duotone ph-cpu"></i
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <h6 class="mb-1">Theme Contrast</h6>
+              <p class="text-muted text-sm">Choose theme contrast</p>
+              <div class="row theme-contrast">
+                <div class="col-6">
+                  <div class="d-grid">
+                    <button
+                      class="preset-btn btn"
+                      data-value="true"
+                      onclick="layout_theme_contrast_change('true');"
+                      data-bs-toggle="tooltip"
+                      title="True"
+                    >
+                      <svg class="pc-icon">
+                        <use xlink:href="#custom-mask"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-grid">
+                    <button
+                      class="preset-btn btn active"
+                      data-value="false"
+                      onclick="layout_theme_contrast_change('false');"
+                      data-bs-toggle="tooltip"
+                      title="False"
+                    >
+                      <svg class="pc-icon">
+                        <use xlink:href="#custom-mask-1-outline"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <h6 class="mb-1">Custom Theme</h6>
+              <p class="text-muted text-sm">Choose your primary theme color</p>
+              <div class="theme-color preset-color">
+                <a                  
+                  data-bs-toggle="tooltip"
+                  title="Blue"
+                  class="active"
+                  data-value="preset-1"
+                  ><i class="ti ti-checks"></i
+                ></a>
+                <a                  
+                  data-bs-toggle="tooltip"
+                  title="Indigo"
+                  data-value="preset-2"
+                  ><i class="ti ti-checks"></i
+                ></a>
+                <a                  
+                  data-bs-toggle="tooltip"
+                  title="Purple"
+                  data-value="preset-3"
+                  ><i class="ti ti-checks"></i
+                ></a>
+                <a                  
+                  data-bs-toggle="tooltip"
+                  title="Pink"
+                  data-value="preset-4"
+                  ><i class="ti ti-checks"></i
+                ></a>
+                <a                  
+                  data-bs-toggle="tooltip"
+                  title="Red"
+                  data-value="preset-5"
+                  ><i class="ti ti-checks"></i
+                ></a>
+                <a                  
+                  data-bs-toggle="tooltip"
+                  title="Orange"
+                  data-value="preset-6"
+                  ><i class="ti ti-checks"></i
+                ></a>
+                <a                  
+                  data-bs-toggle="tooltip"
+                  title="Yellow"
+                  data-value="preset-7"
+                  ><i class="ti ti-checks"></i
+                ></a>
+                <a                  
+                  data-bs-toggle="tooltip"
+                  title="Green"
+                  data-value="preset-8"
+                  ><i class="ti ti-checks"></i
+                ></a>
+                <a                  
+                  data-bs-toggle="tooltip"
+                  title="Teal"
+                  data-value="preset-9"
+                  ><i class="ti ti-checks"></i
+                ></a>
+                <a                  
+                  data-bs-toggle="tooltip"
+                  title="Cyan"
+                  data-value="preset-10"
+                  ><i class="ti ti-checks"></i
+                ></a>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <h6 class="mb-1">Theme layout</h6>
+              <p class="text-muted text-sm">Choose your layout</p>
+              <div class="theme-main-layout d-flex align-center gap-1 w-100">
+                <a
+                  href="#!"
+                  data-bs-toggle="tooltip"
+                  title="Vertical"
+                  class="active"
+                  data-value="vertical"
+                  ><img
+                    src="/assets/images/customizer/caption-on.svg"
+                    alt="img"
+                    class="img-fluid"
+                  /> </a
+                ><a
+                  href="#!"
+                  data-bs-toggle="tooltip"
+                  title="Horizontal"
+                  data-value="horizontal"
+                  ><img
+                    src="/assets/images/customizer/horizontal.svg"
+                    alt="img"
+                    class="img-fluid"
+                  /> </a
+                ><a
+                  href="#!"
+                  data-bs-toggle="tooltip"
+                  title="Color Header"
+                  data-value="color-header"
+                  ><img
+                    src="/assets/images/customizer/color-header.svg"
+                    alt="img"
+                    class="img-fluid"
+                  /> </a
+                ><a
+                  href="#!"
+                  data-bs-toggle="tooltip"
+                  title="Compact"
+                  data-value="compact"
+                  ><img
+                    src="/assets/images/customizer/compact.svg"
+                    alt="img"
+                    class="img-fluid"
+                  /> </a
+                ><a
+                  href="#!"
+                  data-bs-toggle="tooltip"
+                  title="Tab"
+                  data-value="tab"
+                  ><img
+                    src="/assets/images/customizer/tab.svg"
+                    alt="img"
+                    class="img-fluid"
+                /></a>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <h6 class="mb-1">Sidebar Caption</h6>
+              <p class="text-muted text-sm">Sidebar Caption Hide/Show</p>
+              <div class="row theme-color theme-nav-caption">
+                <div class="col-6">
+                  <div class="d-grid">
+                    <button
+                      class="preset-btn btn-img btn active"
+                      data-value="true"
+                      onclick="layout_caption_change('true');"
+                      data-bs-toggle="tooltip"
+                      title="Caption Show"
+                    >
+                      <img
+                        src="/assets/images/customizer/caption-on.svg"
+                        alt="img"
+                        class="img-fluid"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-grid">
+                    <button
+                      class="preset-btn btn-img btn"
+                      data-value="false"
+                      onclick="layout_caption_change('false');"
+                      data-bs-toggle="tooltip"
+                      title="Caption Hide"
+                    >
+                      <img
+                        src="/assets/images/customizer/caption-off.svg"
+                        alt="img"
+                        class="img-fluid"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="pc-rtl">
+                <h6 class="mb-1">Theme Layout</h6>
+                <p class="text-muted text-sm">LTR/RTL</p>
+                <div class="row theme-color theme-direction">
+                  <div class="col-6">
+                    <div class="d-grid">
+                      <button
+                        class="preset-btn btn-img btn active"
+                        data-value="false"
+                        onclick="layout_rtl_change('false');"
+                        data-bs-toggle="tooltip"
+                        title="LTR"
+                      >
+                        <img
+                          src="/assets/images/customizer/ltr.svg"
+                          alt="img"
+                          class="img-fluid"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="d-grid">
+                      <button
+                        class="preset-btn btn-img btn"
+                        data-value="true"
+                        onclick="layout_rtl_change('true');"
+                        data-bs-toggle="tooltip"
+                        title="RTL"
+                      >
+                        <img
+                          src="/assets/images/customizer/rtl.svg"
+                          alt="img"
+                          class="img-fluid"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item pc-box-width">
+              <div class="pc-container-width">
+                <h6 class="mb-1">Layout Width</h6>
+                <p class="text-muted text-sm">
+                  Choose Full or Container Layout
+                </p>
+                <div class="row theme-color theme-container">
+                  <div class="col-6">
+                    <div class="d-grid">
+                      <button
+                        class="preset-btn btn-img btn active"
+                        data-value="false"
+                        onclick="change_box_container('false')"
+                        data-bs-toggle="tooltip"
+                        title="Full Width"
+                      >
+                        <img
+                          src="/assets/images/customizer/full.svg"
+                          alt="img"
+                          class="img-fluid"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="d-grid">
+                      <button
+                        class="preset-btn btn-img btn"
+                        data-value="true"
+                        onclick="change_box_container('true')"
+                        data-bs-toggle="tooltip"
+                        title="Fixed Width"
+                      >
+                        <img
+                          src="/assets/images/customizer/fixed.svg"
+                          alt="img"
+                          class="img-fluid"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-grid">
+                <button class="btn btn-light-danger" id="layoutreset">
+                  Reset Layout
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- [Page Specific JS] start -->
+
+    <script src="/assets/js/main.js"></script>
+    <script
+      data-cfasync="false"
+      src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="/assets/js/plugins/apexcharts.min.js"></script>
+    <script src="/assets/js/pages/dashboard-default.js"></script>
+    <!-- [Page Specific JS] end --><!-- Required Js -->
+    <script src="/assets/js/plugins/popper.min.js"></script>
+    <script src="/assets/js/plugins/simplebar.min.js"></script>
+    <script src="/assets/js/plugins/bootstrap.min.js"></script>
+    <!-- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    -->
+    <script src="/assets/js/fonts/custom-font.js"></script>
+    <script src="/assets/js/pcoded.js"></script>
+    <script src="/assets/js/plugins/feather.min.js"></script>
+
+    <script>
+      layout_change("light");
+    </script>
+    <script>
+      change_box_container("false");
+    </script>
+    <script>
+      layout_caption_change("true");
+    </script>
+    <script>
+      layout_rtl_change("false");
+    </script>
+    <script>
+      preset_change("preset-1");
+    </script>
+    <script>
+      main_layout_change("vertical");
+    </script>
+  </body>
+  <!-- [Body] end -->
+</html>
